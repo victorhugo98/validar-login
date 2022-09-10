@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/079792a7af.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/cadastro.css">
+  <title>Cadastre-se</title>
+</head>
+<body>
+  
+<div class="container">
+
+  <div class="card">
+    <h1>Cadastrar</h1>
+
+    <div class="msgError">
+      <p>Preencha todos os campos corretamente.</p>
+    </div>
+
+    <div class="msgSuccess">
+      <p>Cadastrando Usuário...</p>
+    </div>
+
+    <div class="label-float">
+    <input type="text" name="" id="inputNome" placeholder=" " required>  
+    <label for="inputNome" id="labelNome">Nome</label>
+    </div>
+
+    <div class="label-float">
+      <input type="text" name="" id="inputUsuario" placeholder=" " required>  
+      <label for="inputUsuario" id="labelUsuario">Usuário</label>
+      </div>
+
+    <div class="label-float">
+      <input type="password" name="" id="senhaCadastro"  placeholder=" " required>  
+      <label for="senha" id="labelSenha">Senha</label>
+      <i class="fa-solid fa-eye" ></i>
+    </div>
+
+    <div class="label-float">
+      <input type="password" name="" id="confirmSenha" placeholder=" " required>  
+      <label for="confirmSenha" id="labelConfirmSenha">Confirmar senha</label>
+      <i class="fa-solid fa-eye verSenha" ></i>
+    </div>
+
+    <div class="justify-center">
+      <button id="cadastrarButton">Cadastrar</button>
+    </div>
+
+   
+  </div>
+
+</div>
+
+
+  <script src="./script/criarconta.js"></script>
+</body>
+</html>

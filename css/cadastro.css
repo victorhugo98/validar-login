@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background-image: url(../img/quino-al-FVOkPmiCzAM-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgb(132, 106, 156);
+}
+.container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+  animation:animarEntrada .4s forwards ;
+}
+
+@keyframes animarEntrada {
+  from{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.card{
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #00000060;
+}
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #272262;
+}
+
+input{
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #272262;
+  background-color: transparent;
+  outline: none;
+  min-width: 380px;
+  font-size: 1rem;
+  transition: all .3s ease-out;
+  border-radius: 0;
+}
+input:focus{
+  border-bottom: 2px solid #4038a0;
+}
+label{
+  color: #272262;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+input:focus + label,
+input:valid + label{
+  font-size: 13px;
+  margin-top: 0px;
+  color: #4038a0;
+}
+
+.label-float{
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+button{
+  background-color: transparent;
+  border-color: #272262;
+  color: #272262;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+button:hover{
+  background-color: #272262;
+  color: white;
+  transition: all .4s ease-out;
+}
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+.fa-eye{
+  position: absolute;
+  top: 16px;
+  right: 5px;
+  cursor: pointer;
+}
+.msgSuccess{
+  text-align: center;
+  background-color: lightgreen;
+  color: green;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  animation: animarMsg .6s forwards;
+  border-radius: 4px;
+  display: none;
+  font-weight: bold;
+
+}
+.msgError{
+  text-align: center;
+  background-color: rgb(224, 147, 147);
+  color: rgb(120, 0, 0);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  animation: animarMsg .6s forwards;
+  border-radius: 4px;
+  display: none;
+  font-weight: bold;
+}
+
+@keyframes animarMsg{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+
+  }
+}
